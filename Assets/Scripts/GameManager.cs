@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Advertisements;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        // Advertisements.Initialize("這裡輸入遊戲id");
         gameOverPanel.SetActive(false);
         GetHighscore();
     }
@@ -42,6 +44,7 @@ public class GameManager : MonoBehaviour
 
     public void OnBombHit()
     {
+        // Advertisements.show();
         Time.timeScale = 0;
 
         gameOverPanelScoreText.text = "Score: " + score.ToString();
