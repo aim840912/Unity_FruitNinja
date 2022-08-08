@@ -8,7 +8,8 @@ mousePos.z = 10;
 rb.position = Camera.main.ScreenToWorldPoint(mousePos);
 </font>
 
-<font color=Orange>  
-Trail Renderer
-</font>
+using UnityEngine.Advertisements
 
+Trail Renderer
+
+Time.timeScale
